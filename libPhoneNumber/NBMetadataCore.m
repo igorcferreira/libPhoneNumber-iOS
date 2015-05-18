@@ -10936,7 +10936,7 @@
         [numberFormats_FormatArray addObject:numberFormats2];
 
         NSMutableArray *numberFormats3_patternArray = [[NSMutableArray alloc] init];
-        [numberFormats3_patternArray addObject:@"(?:1[1-9]|2[12478]|9[1-9])9"];
+        [numberFormats3_patternArray addObject:@"(?:1[1-9]|2[12478]|9[1-9]|8[1-9])9"];
         NBNumberFormat *numberFormats3 = [[NBNumberFormat alloc] initWithPattern:@"(\\d{2})(\\d{5})(\\d{4})" withFormat:@"$1 $2-$3" withLeadingDigitsPatterns:numberFormats3_patternArray withNationalPrefixFormattingRule:@"($1)" whenFormatting:NO withDomesticCarrierCodeFormattingRule:@"0 $CC ($1)"];
         [numberFormats_FormatArray addObject:numberFormats3];
 
@@ -10959,7 +10959,7 @@
         NSMutableArray *intlNumberFormats_FormatArray = [[NSMutableArray alloc] init];
 
         NSMutableArray *intlNumberFormats0_patternArray = [[NSMutableArray alloc] init];
-        [intlNumberFormats0_patternArray addObject:@"(?:1[1-9]|2[12478]|9[1-9])9"];
+        [intlNumberFormats0_patternArray addObject:@"(?:1[1-9]|2[12478]|9[1-9]|8[1-9])9"];
         NBNumberFormat *intlNumberFormats0 = [[NBNumberFormat alloc] initWithPattern:@"(\\d{2})(\\d{5})(\\d{4})" withFormat:@"$1 $2-$3" withLeadingDigitsPatterns:intlNumberFormats0_patternArray withNationalPrefixFormattingRule:@"($1)" whenFormatting:NO withDomesticCarrierCodeFormattingRule:@"0 $CC ($1)"];
         [intlNumberFormats_FormatArray addObject:intlNumberFormats0];
 
